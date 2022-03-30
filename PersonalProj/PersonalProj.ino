@@ -18,7 +18,7 @@ void loop()
   humidity=humidity/1023*5.0;
   Serial.print("Humidity after: ");
   Serial.println(humidity);
-  if(humidity < 2) //check if humidity is over 70%
+  if(humidity < 2) //check if humidity is under 70%
   {
     digitalWrite(pump, HIGH);
     Serial.println("Pump HIGH");
